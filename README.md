@@ -1,1 +1,1 @@
-# Eat-Da-Burger
+# Eat-Da-Burger is an app that uses MySql, Node, Express, and Handlebars.
