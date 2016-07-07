@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var path = require('path');
 var app = express();
-var PORT = 3000;
+var PORT = process.env.PORT || 3306;
 var orm = require('./config/orm.js');
 
 // parse application/x-www-form-urlencoded
