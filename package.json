@@ -24,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/ptokmak/Eat-Da-Burger/issues"
   },
+  "engines": {
+    "node": "5.3.0"
+  },
   "homepage": "https://github.com/ptokmak/Eat-Da-Burger#readme"
 }
+
