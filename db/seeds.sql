@@ -1,5 +1,8 @@
 USE burgers_db;
 
-INSERT INTO burgers (burger_name) VALUES ('Double Whopper');
-INSERT INTO burgers (burger_name) VALUES ('Bacon Cheddar Burger');
-INSERT INTO burgers (burger_name) VALUES ('Grand Slam Burger');
+INSERT INTO burgers (burger_name, devoured) VALUES ('Double Stacker', false);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Classic Cheeseburger', false);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Bacon Cheeseburger', false);
+
+-- ALTER TABLE `burgers_db`.`burgers` 
+-- AUTO_INCREMENT = 1 ;
