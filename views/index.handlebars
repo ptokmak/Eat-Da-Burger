@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<script src="/css/jquery-2.0.0.min.js"></script>
+	<script src="/css/bootstrap.min.js"></script>
+
+    <title>Eat-Da-Burger</title>
+</head>
+<body>
+    <div class="container">		
+		<img class="center-block" width="145" height="175" src="/img/burger.png" />	
+		<h1 class="text-center">Eat-Da-Burger!</h1>	
+
+
+			<form action="/create" method="post" role="form">
+				<div class="form-group">
+					<label for="">Enter a burger you want to eat and Click "Submit" button.</label>
+					<input type="text" class="form" id="burger" name="burger_name" size="50">
+				</div>
+
+				<button type="submit" class="btn btn-lg btn-primary submit center-block">Submit</button>
+			</form>
+	 
+		<hr>
+
+		<div class="col-md-6">
+  		{{#each sent}}
+  		<div class="well text-center">
+      	<p>{{this.id}}. {{this.burger_name}}</p>
+
+      	<form action="/delete?_method=DELETE" method="POST">
+	      	<input type="hidden" name="id" value="{{this.id}}">
+	      	<button class="btn btn-danger center-block">Devour It!</button>
+      	</form>
+  
+		</div>
+  		{{/each}}
+  		</div>
+
+    </div>
+
+</body>
+</html>
+
+<script>
+$(".submit").on("click", function(e) {
+})
+</script>
